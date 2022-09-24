@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './index.css';
 import About from './components/About';
 import Nav from './components/Nav';
 import Gallery from "./components/Gallery";
@@ -27,7 +26,8 @@ function App() {
        currentCategory={currentCategory}> 
       </Nav>
       <main>
-        <Gallery></Gallery>
+        {/* to pass the current category, which is the category selected by the user, from the Gallery component in App.js */}
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
